@@ -1,0 +1,24 @@
+<p>test-http works!
+<button (click)="TestHttpBt()"> Test HttpClient</button>
+<button (click)="removeItem()"> elimina elemento</button></p>
+<table class="table table-striped">
+    <caption>Tabla de ejemplo</caption>
+    <thead>
+        <tr class="table-info">
+            <th scope="col">#</th>
+            <th scope="col">UID</th>
+            <th scope="col">Title</th>
+            <th scope="col">Body</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let result of data">
+            <th scope="row"> {{ result['id']}}</th>
+            <td> {{ result['userId'] }}</td>
+            <td> {{ result['title']}}</td>
+            <td> {{ result['body']}}</td>
+        </tr>
+    </tbody>
+
+
+</table>
